@@ -7,7 +7,7 @@ import time
 import os
 import sys
 script_version = '4.0.0'
-referrer = "2ed800ac-96cc-4d95-9df2-fa28ed4c7a51"
+referrer = "Client configuration ID"
 def progressBar():
 	animation = [
 	    "[□□□□□□□□□□]", "[■□□□□□□□□□]", "[■■□□□□□□□□]", "[■■■□□□□□□□]",
@@ -56,7 +56,7 @@ def run():
 		    "warp_enabled": False,
 		    "tos": datetime.datetime.now().isoformat()[:-3] + "+07:00",
 		    "type": "Android",
-		    "locale": "es_US"
+		    "locale": "vi_VN"
 		}
 		data = json.dumps(body).encode('utf8')
 		headers = {
@@ -97,7 +97,7 @@ while True:
 	else:
 		b += 1
 		print("[✘] Lỗi kết nối tới máy chủ.")
-		for i in range(10, 0, -1):
+		for i in range(18, 0, -1):
 			sys.stdout.write(f"\r[*] Thử lại sau {i}s...")
 			sys.stdout.flush()
 			time.sleep(1)
